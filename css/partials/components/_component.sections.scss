@@ -1,0 +1,14 @@
+/**
+    Sections style
+*/
+section {
+    padding: 3% 5%; 
+    &.opening {
+        background: $SFGrey url( ../img/sarahford.png ) no-repeat bottom left;
+        background-size: contain;
+        height: 300px;
+    }
+    &.testimonial {
+        background-color: $SFPink;
+    }
+}

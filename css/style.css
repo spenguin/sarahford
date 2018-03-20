@@ -1,0 +1,100 @@
+/**
+    Global styles
+*/
+html {
+  padding: 0;
+  margin: 0; }
+
+/**
+    Colours
+*/
+/**
+	Fonts styles
+*/
+body {
+  font-size: 1.5rem;
+  font-family: "Gentium Basic", serif;
+  line-height: 2.1rem;
+  color: #403c3b; }
+
+/**
+    Elements accumulated
+*/
+/**
+    Structure styles
+*/
+body {
+  padding: 0;
+  margin: 0; }
+
+/**
+    Heading styles
+*/
+h1 {
+  color: #a9caad;
+  font-family: "Fugaz One", cursive;
+  font-size: 2.8rem;
+  width: 50%; }
+
+/*
+@import "partials/objects.grid";
+@import "partials/objects.wrappers";
+
+
+@import "partials/tools.mixins";
+
+@import "partials/elements.headings";
+@import "partials/elements.text";
+*/
+/**
+    Components accumulated
+*/
+/**
+    Sections style
+*/
+section {
+  padding: 3% 5%; }
+  section.opening {
+    background: #403c3b url(../img/sarahford.png) no-repeat bottom left;
+    background-size: contain;
+    height: 300px; }
+  section.testimonial {
+    background-color: #ea7c97; }
+
+/**
+    Structure styles
+*/
+nav {
+  height: 70px;
+  width: 50%; }
+  nav ul {
+    float: right;
+    list-style: none; }
+    nav ul li {
+      float: left;
+      list-style: none; }
+      nav ul li a {
+        text-decoration: none;
+        color: #ea7c97;
+        font-size: 1vw; }
+
+/**
+    Header styles
+*/
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between; }
+
+/*
+@import "partials/components.header";
+@import "partials/components.footer";
+@import "partials/components.site-nav";
+@import "partials/components.articles";
+@import "partials/components.buttons";
+@import "partials/components.forms";
+
+*/
+
+/*# sourceMappingURL=style.css.map */

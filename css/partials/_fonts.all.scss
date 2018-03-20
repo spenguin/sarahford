@@ -1,0 +1,12 @@
+/**
+	Fonts styles
+*/
+$bodyFamily: 	'Gentium Basic', serif;
+$headingFamily:	'Fugaz One', cursive;
+
+body {
+	font-size: 1.5rem; //87.5%;
+	font-family: $bodyFamily;
+	line-height: 2.1rem; //1.8rem;
+	color: $SFGrey;
+}
