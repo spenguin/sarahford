@@ -1,0 +1,12 @@
+/**
+	Article styles
+*/
+article {
+	width: 80%;
+}
+.opening article {
+	background: $SFGrey url( ../img/sarahford.png ) no-repeat bottom left;
+    background-size: contain;
+    height: 100%;
+    margin: 0 auto;
+}

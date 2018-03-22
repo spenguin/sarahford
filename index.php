@@ -8,6 +8,8 @@
 
 get_header(); ?>
     <section class="opening">
+        <article>
+        </article>
     </section>
     <section>
     </section>

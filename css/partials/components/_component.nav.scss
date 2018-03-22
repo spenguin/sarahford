@@ -3,7 +3,8 @@
 */
 nav {
         height: 70px;
-        width: 50%;
+        width: 40%;
+        padding-right: 10%;
         ul {
             float: right;
             list-style: none;
@@ -14,7 +15,13 @@ nav {
                     text-decoration: none;
                     color: $SFPink;
                     font-size: 1vw;
+                    padding: 0 7px;
+                    border-right: 1px solid $SFPink;
                 }
+
+            }
+            li:last-child a {
+                border-right: none;
             }
         }
 }

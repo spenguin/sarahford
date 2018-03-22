@@ -34,7 +34,8 @@ h1 {
   color: #a9caad;
   font-family: "Fugaz One", cursive;
   font-size: 2.8rem;
-  width: 50%; }
+  width: 40%;
+  padding-left: 10%; }
 
 /*
 @import "partials/objects.grid";
@@ -55,9 +56,9 @@ h1 {
 section {
   padding: 3% 5%; }
   section.opening {
-    background: #403c3b url(../img/sarahford.png) no-repeat bottom left;
-    background-size: contain;
-    height: 300px; }
+    background-color: #403c3b;
+    height: 400px;
+    padding: 0; }
   section.testimonial {
     background-color: #ea7c97; }
 
@@ -66,7 +67,8 @@ section {
 */
 nav {
   height: 70px;
-  width: 50%; }
+  width: 40%;
+  padding-right: 10%; }
   nav ul {
     float: right;
     list-style: none; }
@@ -76,7 +78,11 @@ nav {
       nav ul li a {
         text-decoration: none;
         color: #ea7c97;
-        font-size: 1vw; }
+        font-size: 1vw;
+        padding: 0 7px;
+        border-right: 1px solid #ea7c97; }
+    nav ul li:last-child a {
+      border-right: none; }
 
 /**
     Header styles
@@ -86,6 +92,18 @@ header {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between; }
+
+/**
+	Article styles
+*/
+article {
+  width: 80%; }
+
+.opening article {
+  background: #403c3b url(../img/sarahford.png) no-repeat bottom left;
+  background-size: contain;
+  height: 100%;
+  margin: 0 auto; }
 
 /*
 @import "partials/components.header";

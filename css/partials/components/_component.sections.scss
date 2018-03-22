@@ -2,11 +2,11 @@
     Sections style
 */
 section {
-    padding: 3% 5%; 
+    padding: 3% 5%;
     &.opening {
-        background: $SFGrey url( ../img/sarahford.png ) no-repeat bottom left;
-        background-size: contain;
-        height: 300px;
+        background-color: $SFGrey;
+        height: 400px;
+        padding: 0;
     }
     &.testimonial {
         background-color: $SFPink;
