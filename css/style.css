@@ -37,6 +37,12 @@ h1 {
   width: 40%;
   padding-left: 10%; }
 
+.voiceover h2 {
+  min-height: 70px;
+  padding: 0;
+  font-size: 1.5vw;
+  color: #403c3b; }
+
 /*
 @import "partials/objects.grid";
 @import "partials/objects.wrappers";
@@ -61,6 +67,13 @@ section {
     padding: 0; }
   section.testimonial {
     background-color: #ea7c97; }
+  section.voiceover .vo-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between; }
 
 /**
     Structure styles
@@ -97,14 +110,118 @@ header {
 	Article styles
 */
 article {
-  width: 80%; }
+  width: 80%;
+  margin: 0 auto; }
 
 .opening article {
   background: #403c3b url(../img/sarahford.png) no-repeat bottom left;
   background-size: contain;
   height: 100%;
+  margin: 0 auto;
+  color: white;
+  font-size: 1.5vw;
+  line-height: 1.9vw;
+  display: flex;
+  align-items: center; }
+  .opening article p {
+    margin-left: 30%; }
+
+.testimonial article {
+  color: white;
+  font-size: 1.3vw;
+  text-align: center; }
+
+.voiceover article {
+  width: 30%; }
+
+.contact article {
+  width: 50%;
   margin: 0 auto; }
 
+/**
+    Footer styles
+*/
+footer {
+  background-color: #a9caad; }
+
+/**
+ *  Forms styles
+ */
+.wpcf7 {
+  width: 100%;
+  margin: 0 auto; }
+  .wpcf7 input {
+    height: 1.5vw;
+    font-size: 1.3vw; }
+    .wpcf7 input.wpcf7-submit {
+      height: 2.0vw;
+      font-size: 1.3vw;
+      color: #403c3b;
+      background-color: #ea7c97;
+      border: 0; }
+  .wpcf7 textarea {
+    width: 63%; }
+
+/* 
+#contactform2 {
+    .wdform_column {
+        padding-right: 0!important;
+        border-spacing: 0;
+    }
+    .wdform-label {
+        color: $SFPink;
+        font-family: $bodyFamily;
+    }
+    .mini_label {
+        color: $SFPink;
+        font-family: $bodyFamily;
+        font-size: 1.0rem;
+    }
+}
+/*
+#mc_embed_signup {
+    color: $SPPDarkBlue;
+}
+.landing-page-content {
+    width: 50%;
+    margin: 0 auto;
+    .signup {
+        p {
+            font-style: italic;
+            font-size: 1.3rem;
+            line-height: 2.5rem;
+        }
+        .indicates-required {
+            text-align: right;
+            font-size: 1.0rem;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .mc-field-group {
+            position: relative;
+            label {
+                display: block;
+                margin-top: 20px;
+                span{
+                    position: absolute;
+                    top: 33px;
+                    right: 8px;
+                    color: #ff0000
+                }
+            }
+            input {
+                display: block;
+                width: 100%;
+                padding: 8px 0;
+                text-indent: 2%;  
+            }
+        }
+        input[type="submit"] {
+            background-color: $SPPDarkBlue;
+            border-color: $SPPDarkBlue;
+        }
+    }
+}*/
 /*
 @import "partials/components.header";
 @import "partials/components.footer";

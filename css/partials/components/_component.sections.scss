@@ -11,4 +11,12 @@ section {
     &.testimonial {
         background-color: $SFPink;
     }
+    &.voiceover .vo-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
 }

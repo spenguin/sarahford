@@ -26,10 +26,10 @@
             <h1>Sarah Ford</h1>
             <nav>
                 <ul>
-                    <li><a href="">Voiceover Demos</a></li>
-                    <li><a href="">Video Voiceovers</a></li>
-                    <li><a href="">Clients</a></li>
-                    <li><a href="">Get in touch</a></li>
+                    <li><a href="#vo-demos">Voiceover Demos</a></li>
+                    <li><a href="#vo-videos">Video Voiceovers</a></li>
+                    <li><a href="#clients">Clients</a></li>
+                    <li><a href="#contact">Get in touch</a></li>
                 </ul>
             </nav>
         </header>

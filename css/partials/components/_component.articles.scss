@@ -2,11 +2,32 @@
 	Article styles
 */
 article {
-	width: 80%;
+    width: 80%;
+    margin: 0 auto;
 }
 .opening article {
 	background: $SFGrey url( ../img/sarahford.png ) no-repeat bottom left;
     background-size: contain;
     height: 100%;
+    margin: 0 auto;
+    color: white;
+    font-size: 1.5vw;
+    line-height: 1.9vw;
+    display: flex;
+    align-items: center;
+    p {
+        margin-left: 30%;
+    }
+}
+.testimonial article {
+    color: white;
+    font-size: 1.3vw;
+    text-align: center;
+}
+.voiceover article {
+    width: 30%;
+}
+.contact article {
+    width: 50%;
     margin: 0 auto;
 }
