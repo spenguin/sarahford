@@ -78,6 +78,9 @@ section {
 /**
     Structure styles
 */
+html {
+  scroll-behavior: smooth; }
+
 nav {
   height: 70px;
   width: 40%;
@@ -96,6 +99,13 @@ nav {
         border-right: 1px solid #ea7c97; }
     nav ul li:last-child a {
       border-right: none; }
+
+.toTop {
+  text-align: right; }
+  .toTop a {
+    color: #a9caad;
+    text-decoration: none;
+    font-size: 1.3vw; }
 
 /**
     Header styles

@@ -22,6 +22,7 @@
 
 <body <?php body_class(); ?>>
     <div class="container">
+        <a id="top"></a>
         <header>
             <h1>Sarah Ford</h1>
             <nav>

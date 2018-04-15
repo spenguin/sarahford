@@ -7,7 +7,6 @@
  */
 
 get_header(); ?>
-    <a id="top"></a>
     <section class="opening">
         <article>
             <?php 
@@ -24,6 +23,7 @@ get_header(); ?>
                 include( locate_template( 'templates/loop-voiceovers.php' ) );
             ?>
         </div>
+        <div class="toTop"><a href="#top">Top</a></div>
     </section>
     <section class="testimonial">
         <article>
@@ -40,7 +40,8 @@ get_header(); ?>
                 $type   = 'video';
                 include( locate_template( 'templates/loop-voiceovers.php' ) );
             ?>
-        </div>        
+        </div> 
+        <div class="toTop"><a href="#top">Top</a></div>       
     </section>   
     <section class="testimonial">
         <article>
@@ -58,6 +59,7 @@ get_header(); ?>
                 echo apply_filters( 'the_content', $res->post_content );
             ?>
         </article>
+        <div class="toTop"><a href="#top">Top</a></div>
     </section>
     
 <?php get_footer(); ?>

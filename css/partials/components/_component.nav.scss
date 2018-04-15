@@ -1,6 +1,9 @@
 /**
     Structure styles
 */
+html {
+    scroll-behavior: smooth;
+}
 nav {
         height: 70px;
         width: 40%;
@@ -24,4 +27,12 @@ nav {
                 border-right: none;
             }
         }
+}
+.toTop {
+    text-align: right;
+    a {
+        color: $SFGreen;
+        text-decoration: none;
+        font-size: 1.3vw;
+    }
 }
