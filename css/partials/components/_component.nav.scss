@@ -6,8 +6,13 @@ html {
 }
 nav {
         height: 70px;
-        width: 40%;
+        width: 65%;
         padding-right: 10%;
+        @include respond-to( medium-screens )
+        {
+            width: 70%;
+            padding-right: 5%
+        }          
         ul {
             float: right;
             list-style: none;
@@ -17,7 +22,7 @@ nav {
                 a {
                     text-decoration: none;
                     color: $SFPink;
-                    font-size: 1vw;
+                    font-size: 1.2rem;
                     padding: 0 7px;
                     border-right: 1px solid $SFPink;
                 }

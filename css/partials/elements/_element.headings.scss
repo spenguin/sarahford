@@ -5,8 +5,13 @@ h1 {
     color: $SFGreen;
     font-family: $headingFamily;
     font-size: 2.8rem;
-    width: 40%;
+    width: 25%;
     padding-left: 10%;
+	@include respond-to( medium-screens )
+	{
+        width: 25%;
+        padding-left: 5%
+	}    
 }
 .voiceover h2 {
     min-height: 70px;

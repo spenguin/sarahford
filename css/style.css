@@ -18,6 +18,39 @@ body {
   color: #403c3b; }
 
 /**
+	Grid values
+*/
+/**
+	Mixins
+*/
+/* Usage - Stick into the top of your SCSS sheet and @include where needed for cross browser transitions. 
+
+.class {
+		 @include transition($transition-property, $transition-time, $method);
+}
+
+$transition-property = the property you want to transition
+$transition-time = seconds you want the transition to last
+$method = how you want it to transition - e.g. ease-in-out
+
+Usage example;
+
+-------------
+
+.item {
+		@include transition(padding, 1s, ease-in-out);
+}
+
+-------------
+
+*/
+/**
+	Calculate the width of <main> based on the aside and gutter widths
+*/
+/**
+	Set of mixins from https://gist.github.com/garyharan/957284
+*/
+/**
     Elements accumulated
 */
 /**
@@ -34,8 +67,12 @@ h1 {
   color: #a9caad;
   font-family: "Fugaz One", cursive;
   font-size: 2.8rem;
-  width: 40%;
+  width: 25%;
   padding-left: 10%; }
+  @media only screen and (min-width: 960px) and (max-width: 1149px) {
+    h1 {
+      width: 25%;
+      padding-left: 5%; } }
 
 .voiceover h2 {
   min-height: 70px;
@@ -45,11 +82,8 @@ h1 {
 
 /*
 @import "partials/objects.grid";
-@import "partials/objects.wrappers";
-
-
-@import "partials/tools.mixins";
-
+@import "partials/objects.wrappers";*/
+/*
 @import "partials/elements.headings";
 @import "partials/elements.text";
 */
@@ -74,6 +108,9 @@ section {
     width: 80%;
     margin: 0 auto;
     justify-content: space-between; }
+    @media only screen and (min-width: 960px) and (max-width: 1149px) {
+      section.voiceover .vo-wrapper {
+        width: 100%; } }
 
 /**
     Structure styles
@@ -83,8 +120,12 @@ html {
 
 nav {
   height: 70px;
-  width: 40%;
+  width: 65%;
   padding-right: 10%; }
+  @media only screen and (min-width: 960px) and (max-width: 1149px) {
+    nav {
+      width: 70%;
+      padding-right: 5%; } }
   nav ul {
     float: right;
     list-style: none; }
@@ -94,7 +135,7 @@ nav {
       nav ul li a {
         text-decoration: none;
         color: #ea7c97;
-        font-size: 1vw;
+        font-size: 1.2rem;
         padding: 0 7px;
         border-right: 1px solid #ea7c97; }
     nav ul li:last-child a {
@@ -122,6 +163,9 @@ header {
 article {
   width: 80%;
   margin: 0 auto; }
+  @media only screen and (min-width: 960px) and (max-width: 1149px) {
+    article {
+      width: 90%; } }
 
 .opening article {
   background: #403c3b url(../img/sarahford.png) no-repeat bottom left;

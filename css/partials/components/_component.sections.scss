@@ -18,5 +18,9 @@ section {
         width: 80%;
         margin: 0 auto;
         justify-content: space-between;
+        @include respond-to( medium-screens )
+        {
+            width: 100%;
+        }          
     }
 }
