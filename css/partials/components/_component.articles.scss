@@ -25,7 +25,10 @@ article {
     text-align: center;
 }
 .voiceover article {
-    width: 30%;
+    width: 40%;
+    iframe {
+        max-width: 100%;
+    }
 }
 .contact article {
     width: 50%;
