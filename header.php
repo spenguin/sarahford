@@ -14,7 +14,7 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <!--    <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Gentium+Basic" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css?family=Philosopher|Varela" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="all" href="<?php echo site_url(); ?>/wp-content/themes/sarahford/css/style.css" >
+    <link rel="stylesheet" type="text/css" media="all" href="<?php echo site_url(); ?>/wp-content/themes/sarahford/css/style.css?<?php echo time(); ?>" >
     <!--[if lt IE 9]>
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
 	<![endif]-->

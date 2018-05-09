@@ -5,8 +5,11 @@ section {
     padding: 3% 5%;
     &.opening {
         background-color: $SFGrey;
-        height: 400px;
-        padding: 0;
+        @include respond-to( medium-screens )
+        {
+            height: 400px;
+            padding: 0;
+        }        
     }
     &.testimonial {
         background-color: $SFPink;
