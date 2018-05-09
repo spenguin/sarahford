@@ -4,6 +4,10 @@
 article {
     width: 80%;
     margin: 0 auto;
+    @include respond-to( medium-screens )
+	{
+        width: 90%;
+	}  
 }
 .opening article {
 	background: $SFGrey url( ../img/sarahford.png ) no-repeat bottom left;
