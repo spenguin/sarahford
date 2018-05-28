@@ -27,6 +27,8 @@
         <header>
             <h1>Sarah Ford</h1>
             <nav>
+                <label for="menu">Menu</label>
+                <input type="checkbox" name="menu" id="menu" />
                 <ul>
                     <li><a href="#vo-demos">Voiceover Demos</a></li>
                     <li><a href="#vo-videos">Video Voiceovers</a></li>

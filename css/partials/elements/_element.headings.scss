@@ -28,7 +28,11 @@ h1 {
         width: 25%;
         padding-left: 10%;
         font-size: 2.8rem;
-    }       
+    }  
+    @include respond-to-above( xs-screens )
+    {
+        width: 35%;
+    }     
    
 }
 .voiceover h2 {
