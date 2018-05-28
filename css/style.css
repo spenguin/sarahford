@@ -3,7 +3,8 @@
 */
 html {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
 /**
     Colours
@@ -15,7 +16,8 @@ body {
   font-size: 1.5rem;
   font-family: "Gentium Basic", serif;
   line-height: 2.1rem;
-  color: #403c3b; }
+  color: #403c3b;
+}
 
 /**
 	Grid values
@@ -58,7 +60,8 @@ Usage example;
 */
 body {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
 /**
     Heading styles
@@ -66,19 +69,41 @@ body {
 h1 {
   color: #a9caad;
   font-family: "Fugaz One", cursive;
-  font-size: 2.8rem;
-  width: 25%;
-  padding-left: 10%; }
-  @media only screen and (min-width: 960px) and (max-width: 1149px) {
-    h1 {
-      width: 25%;
-      padding-left: 5%; } }
+  font-size: 1.8rem;
+  width: 100%;
+  padding-left: 0%;
+  text-align: center;
+  margin-bottom: 0;
+  /*	@include respond-to( small-screens )
+  	{
+          width: 100%;
+          padding-left: 0%;
+          text-align: center;
+          margin-bottom: 0;
+      }  */
+}
+@media only screen and (min-width: 880px) and (max-width: 1149px) {
+  h1 {
+    width: 35%;
+    padding-left: 5%;
+    font-size: 2.8rem;
+    margin-bottom: 4%;
+  }
+}
+@media only screen and (min-width: 1150px) {
+  h1 {
+    width: 25%;
+    padding-left: 10%;
+    font-size: 2.8rem;
+  }
+}
 
 .voiceover h2 {
   min-height: 70px;
   padding: 0;
   font-size: 1.5vw;
-  color: #403c3b; }
+  color: #403c3b;
+}
 
 /*
 @import "partials/objects.grid";
@@ -94,127 +119,235 @@ h1 {
     Sections style
 */
 section {
-  padding: 3% 5%; }
+  padding: 3% 5%;
+}
+section.opening {
+  background-color: #403c3b;
+}
+@media only screen and (min-width: 880px) and (max-width: 1149px) {
   section.opening {
-    background-color: #403c3b;
     height: 400px;
-    padding: 0; }
-  section.testimonial {
-    background-color: #ea7c97; }
+    padding: 0;
+  }
+}
+section.testimonial {
+  background-color: #ea7c97;
+}
+section.voiceover .vo-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 880px) and (max-width: 1149px) {
   section.voiceover .vo-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 80%;
-    margin: 0 auto;
-    justify-content: space-between; }
-    @media only screen and (min-width: 960px) and (max-width: 1149px) {
-      section.voiceover .vo-wrapper {
-        width: 100%; } }
+    width: 100%;
+  }
+}
 
 /**
     Structure styles
 */
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+}
 
 nav {
-  height: 70px;
-  width: 65%;
-  padding-right: 10%; }
-  @media only screen and (min-width: 960px) and (max-width: 1149px) {
-    nav {
-      width: 70%;
-      padding-right: 5%; } }
-  nav ul {
-    float: right;
-    list-style: none; }
-    nav ul li {
-      float: left;
-      list-style: none; }
-      nav ul li a {
-        text-decoration: none;
-        color: #ea7c97;
-        font-size: 1.2rem;
-        padding: 0 7px;
-        border-right: 1px solid #ea7c97; }
-    nav ul li:last-child a {
-      border-right: none; }
+  width: 100%;
+  padding-right: 0%;
+  display: flex;
+  height: 50px;
+  margin-bottom: 2%;
+  justify-content: center;
+  /*        @include respond-to( small-screens )
+          {
+              width: 100%;
+              padding-right: 0%;
+              display: flex;
+              height: 50px;
+              margin-bottom: 2%;
+              justify-content: center;
+          }  */
+}
+@media only screen and (min-width: 880px) and (max-width: 1149px) {
+  nav {
+    width: 70%;
+    padding-right: 5%;
+    margin-top: 2%;
+  }
+}
+@media only screen and (min-width: 1150px) {
+  nav {
+    height: 70px;
+    width: 65%;
+    padding-right: 10%;
+    margin-top: 1%;
+  }
+}
+nav ul {
+  float: right;
+  list-style: none;
+}
+nav ul li {
+  float: left;
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #ea7c97;
+  font-size: 1.2rem;
+  padding: 0 7px;
+  border-right: 1px solid #ea7c97;
+}
+nav ul li:last-child a {
+  border-right: none;
+}
 
 .toTop {
-  text-align: right; }
-  .toTop a {
-    color: #a9caad;
-    text-decoration: none;
-    font-size: 1.3vw; }
+  text-align: right;
+}
+.toTop a {
+  color: #a9caad;
+  text-decoration: none;
+  font-size: 1.3vw;
+}
 
 /**
     Header styles
 */
 header {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-between; }
+  justify-content: center;
+  /*    @include respond-to( small-screens )
+      {
+          flex-direction: column;
+          justify-content: center;
+      }   */
+}
+@media only screen and (min-width: 880px) and (max-width: 1149px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 1150px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 
 /**
 	Article styles
 */
 article {
-  width: 80%;
-  margin: 0 auto; }
-  @media only screen and (min-width: 960px) and (max-width: 1149px) {
-    article {
-      width: 90%; } }
+  width: 100%;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 880px) and (max-width: 1149px) {
+  article {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 1150px) {
+  article {
+    width: 80%;
+  }
+}
 
 .opening article {
-  background: #403c3b url(../img/sarahford.png) no-repeat bottom left;
-  background-size: contain;
+  background-color: #403c3b;
   height: 100%;
   margin: 0 auto;
   color: white;
-  font-size: 1.5vw;
-  line-height: 1.9vw;
+  font-size: 1.5rem;
+  line-height: 2rem;
   display: flex;
-  align-items: center; }
+  align-items: center;
+}
+@media only screen and (min-width: 768px) and (max-width: 879px) {
+  .opening article {
+    background: #403c3b url(../img/sarahford.png) no-repeat bottom left;
+    background-size: contain;
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+  }
   .opening article p {
-    margin-left: 30%; }
-
+    margin-left: 30%;
+  }
+}
+@media only screen and (min-width: 880px) and (max-width: 1149px) {
+  .opening article {
+    background: #403c3b url(../img/sarahford.png) no-repeat bottom left;
+    background-size: contain;
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+  }
+  .opening article p {
+    margin-left: 35%;
+  }
+}
+@media only screen and (min-width: 1150px) {
+  .opening article {
+    background: #403c3b url(../img/sarahford.png) no-repeat bottom left;
+    background-size: contain;
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+  }
+  .opening article p {
+    margin-left: 35%;
+  }
+}
 .testimonial article {
   color: white;
   font-size: 1.3vw;
-  text-align: center; }
+  text-align: center;
+}
 
 .voiceover article {
-  width: 30%; }
+  width: 40%;
+}
+.voiceover article iframe {
+  max-width: 100%;
+}
 
 .contact article {
   width: 50%;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 /**
     Footer styles
 */
 footer {
-  background-color: #a9caad; }
+  background-color: #a9caad;
+}
 
 /**
  *  Forms styles
  */
 .wpcf7 {
   width: 100%;
-  margin: 0 auto; }
-  .wpcf7 input {
-    height: 1.5vw;
-    font-size: 1.3vw; }
-    .wpcf7 input.wpcf7-submit {
-      height: 2.0vw;
-      font-size: 1.3vw;
-      color: #403c3b;
-      background-color: #ea7c97;
-      border: 0; }
-  .wpcf7 textarea {
-    width: 63%; }
+  margin: 0 auto;
+}
+.wpcf7 input {
+  height: 1.5vw;
+  font-size: 1.3vw;
+}
+.wpcf7 input.wpcf7-submit {
+  height: 2vw;
+  font-size: 1.3vw;
+  color: #403c3b;
+  background-color: #ea7c97;
+  border: 0;
+}
+.wpcf7 textarea {
+  width: 63%;
+}
 
 /* 
 #contactform2 {
@@ -285,5 +418,3 @@ footer {
 @import "partials/components.forms";
 
 */
-
-/*# sourceMappingURL=style.css.map */

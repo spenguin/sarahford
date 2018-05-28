@@ -2,25 +2,58 @@
 	Article styles
 */
 article {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     @include respond-to( medium-screens )
 	{
         width: 90%;
-	}  
+    }  
+    @include respond-to( large-screens )
+	{
+        width: 80%;
+	}      
 }
 .opening article {
-	background: $SFGrey url( ../img/sarahford.png ) no-repeat bottom left;
-    background-size: contain;
+	background-color: $SFGrey;
     height: 100%;
     margin: 0 auto;
     color: white;
-    font-size: 1.5vw;
-    line-height: 1.9vw;
+    font-size: 1.5rem;
+    line-height: 2.0rem;
     display: flex;
     align-items: center;
+    @include respond-to( small-screens )
+    {
+        background: $SFGrey url( ../img/sarahford.png ) no-repeat bottom left;
+        background-size: contain;
+        font-size: 1.5rem;
+        line-height: 1.9rem;        
+        p {
+            margin-left: 30%;
+        }        
+    }    
+    @include respond-to( medium-screens )
+    {
+        background: $SFGrey url( ../img/sarahford.png ) no-repeat bottom left;
+        background-size: contain;
+        font-size: 1.5rem;
+        line-height: 1.9rem;        
+        p {
+            margin-left: 35%;
+        }        
+    }   
+    @include respond-to( large-screens )
+    {
+        background: $SFGrey url( ../img/sarahford.png ) no-repeat bottom left;
+        background-size: contain;
+        font-size: 1.5rem;
+        line-height: 1.9rem;        
+        p {
+            margin-left: 35%;
+        }        
+    }      
     p {
-        margin-left: 30%;
+    //    margin-left: 30%;
     }
 }
 .testimonial article {
@@ -29,7 +62,10 @@ article {
     text-align: center;
 }
 .voiceover article {
-    width: 30%;
+    width: 40%;
+    iframe {
+        max-width: 100%;
+    }
 }
 .contact article {
     width: 50%;
