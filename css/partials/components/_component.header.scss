@@ -6,19 +6,9 @@ header {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-/*    @include respond-to( small-screens )
-    {
-        flex-direction: column;
-        justify-content: center;
-    }   */ 
-    @include respond-to( medium-screens )
+    @include respond-to-above( xs-screens )
     {
         flex-direction: row;
         justify-content: space-between;
     }
-    @include respond-to( large-screens )
-    {
-        flex-direction: row;
-        justify-content: space-between;
-    }         
 }

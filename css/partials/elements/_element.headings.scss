@@ -9,31 +9,20 @@ h1 {
     padding-left: 0%;
     text-align: center;
     margin-bottom: 0;  
-	@include respond-to( medium-screens )
-	{
-        width: 35%;
+    @include respond-to-above( xs-screens )
+    {
+        width: 36%;
+        text-align: left;
         padding-left: 5%;
         font-size: 2.8rem;
-        margin-bottom: 4%;
-    }    
-/*	@include respond-to( small-screens )
-	{
-        width: 100%;
-        padding-left: 0%;
-        text-align: center;
-        margin-bottom: 0;
-    }  */
+        margin-bottom: 4%;        
+    }     
 	@include respond-to( large-screens )
 	{
         width: 25%;
         padding-left: 10%;
         font-size: 2.8rem;
     }  
-    @include respond-to-above( xs-screens )
-    {
-        width: 35%;
-    }     
-   
 }
 .voiceover h2 {
     min-height: 70px;

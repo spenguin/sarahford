@@ -12,6 +12,10 @@ nav {
         margin-bottom: 2%;
         justify-content: center;
         flex-direction: column;
+        @include respond-to-above( xs-screens )
+        {     
+            width: 65%;
+        }
         @include respond-to( medium-screens )
         {
             width: 70%;
@@ -39,6 +43,10 @@ nav {
             text-align: center;
             font-size: 1.1rem;
             vertical-align: bottom;
+            @include respond-to-above( xs-screens )
+            {
+                display: none;
+            }
         } 
         input[type="checkbox"] {
             display: none;
@@ -46,6 +54,10 @@ nav {
         input[type="checkbox"] + ul {
             height: 0;
             overflow: hidden;
+            @include respond-to-above( xs-screens )
+            {     
+                height: auto;
+            }
         }    
         input[type="checkbox"]:checked + ul {
             height: auto;
@@ -58,6 +70,7 @@ nav {
             flex-direction: column;
             li {
                 width: 200px;
+                list-style: none;
                 a {
                     text-decoration: none;
                     color: $SFPink;
@@ -65,6 +78,27 @@ nav {
                     padding: 0 7px;
                     text-align: left;
                 }
+            }
+            @include respond-to-above( xs-screens )
+            {
+                flex-direction: row;
+                padding: 0;
+                flex-wrap: wrap;
+                li {
+                    list-style: none;
+                    width: auto;
+                    a {
+                        border-right: 1px solid $SFPink;
+                    }
+    
+                }
+                li:last-child a {
+                    border-right: none;
+                }
+            }
+            @include respond-to( large-screens )
+            {
+                justify-content: right;
             }
         }
                  
