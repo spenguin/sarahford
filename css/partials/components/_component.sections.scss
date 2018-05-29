@@ -9,7 +9,11 @@ section {
         {
             height: 400px;
             padding: 0;
-        }        
+        }  
+        @include respond-to( large-screens )
+        {
+            padding: 3% 10% 0 10%;
+        }               
     }
     &.testimonial {
         background-color: $SFPink;

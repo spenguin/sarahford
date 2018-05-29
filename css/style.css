@@ -124,6 +124,11 @@ section.opening {
     padding: 0;
   }
 }
+@media only screen and (min-width: 1150px) {
+  section.opening {
+    padding: 3% 10% 0 10%;
+  }
+}
 section.testimonial {
   background-color: #ea7c97;
 }
@@ -303,17 +308,6 @@ article {
   width: 100%;
   margin: 0 auto;
 }
-@media only screen and (min-width: 880px) and (max-width: 1149px) {
-  article {
-    width: 90%;
-  }
-}
-@media only screen and (min-width: 1150px) {
-  article {
-    width: 80%;
-  }
-}
-
 .opening article {
   background-color: #403c3b;
   height: 100%;
@@ -332,7 +326,7 @@ article {
     line-height: 1.9rem;
   }
   .opening article p {
-    margin-left: 30%;
+    margin-left: 39%;
   }
 }
 @media only screen and (min-width: 880px) and (max-width: 1149px) {
@@ -357,6 +351,7 @@ article {
     margin-left: 35%;
   }
 }
+
 .testimonial article {
   color: white;
   font-size: 1.3vw;
