@@ -60,9 +60,13 @@ article {
     text-align: center;
 }
 .voiceover article {
-    width: 40%;
+//    width: 40%;
     iframe {
         max-width: 100%;
+    }
+    @include respond-to-above( small-screens )
+    {
+        width: 40%;
     }
 }
 .contact article {

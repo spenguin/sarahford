@@ -93,9 +93,8 @@ h1 {
 }
 
 .voiceover h2 {
-  min-height: 70px;
   padding: 0;
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   color: #403c3b;
 }
 
@@ -134,15 +133,16 @@ section.testimonial {
 }
 section.voiceover .vo-wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   width: 80%;
   margin: 0 auto;
   justify-content: space-between;
 }
-@media only screen and (min-width: 880px) and (max-width: 1149px) {
+@media only screen and (min-width: 880px) {
   section.voiceover .vo-wrapper {
     width: 100%;
+    flex-direction: row;
   }
 }
 
@@ -358,11 +358,13 @@ article {
   text-align: center;
 }
 
-.voiceover article {
-  width: 40%;
-}
 .voiceover article iframe {
   max-width: 100%;
+}
+@media only screen and (min-width: 880px) {
+  .voiceover article {
+    width: 40%;
+  }
 }
 
 .contact article {
