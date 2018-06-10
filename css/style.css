@@ -3,8 +3,7 @@
 */
 html {
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
 
 /**
     Colours
@@ -16,8 +15,7 @@ body {
   font-size: 1.5rem;
   font-family: "Varela", serif;
   line-height: 2.1rem;
-  color: #403c3b;
-}
+  color: #403c3b; }
 
 /**
 	Grid values
@@ -60,8 +58,7 @@ Usage example;
 */
 body {
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
 
 /**
     Heading styles
@@ -73,30 +70,24 @@ h1 {
   width: 100%;
   padding-left: 0%;
   text-align: center;
-  margin-bottom: 0;
-}
-@media only screen and (min-width: 768px) {
-  h1 {
-    width: 36%;
-    text-align: left;
-    padding-left: 5%;
-    font-size: 2.8rem;
-    margin-bottom: 4%;
-  }
-}
-@media only screen and (min-width: 1150px) {
-  h1 {
-    width: 25%;
-    padding-left: 10%;
-    font-size: 2.8rem;
-  }
-}
+  margin-bottom: 0; }
+  @media only screen and (min-width: 768px) {
+    h1 {
+      width: 36%;
+      text-align: left;
+      padding-left: 5%;
+      font-size: 2.8rem;
+      margin-bottom: 4%; } }
+  @media only screen and (min-width: 1150px) {
+    h1 {
+      width: 25%;
+      padding-left: 10%;
+      font-size: 2.8rem; } }
 
 .voiceover h2 {
   padding: 0;
   font-size: 1.5rem;
-  color: #403c3b;
-}
+  color: #403c3b; }
 
 /*
 @import "partials/objects.grid";
@@ -112,46 +103,35 @@ h1 {
     Sections style
 */
 section {
-  padding: 3% 5%;
-}
-section.opening {
-  background-color: #403c3b;
-}
-@media only screen and (min-width: 880px) and (max-width: 1149px) {
+  padding: 3% 5%; }
   section.opening {
-    height: 400px;
-    padding: 0;
-  }
-}
-@media only screen and (min-width: 1150px) {
-  section.opening {
-    padding: 3% 10% 0 10%;
-  }
-}
-section.testimonial {
-  background-color: #ea7c97;
-}
-section.voiceover .vo-wrapper {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 80%;
-  margin: 0 auto;
-  justify-content: space-between;
-}
-@media only screen and (min-width: 880px) {
+    background-color: #403c3b; }
+    @media only screen and (min-width: 880px) and (max-width: 1149px) {
+      section.opening {
+        height: 400px;
+        padding: 0; } }
+    @media only screen and (min-width: 1150px) {
+      section.opening {
+        padding: 3% 10% 0 10%; } }
+  section.testimonial {
+    background-color: #ea7c97; }
   section.voiceover .vo-wrapper {
-    width: 100%;
-    flex-direction: row;
-  }
-}
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between; }
+    @media only screen and (min-width: 880px) {
+      section.voiceover .vo-wrapper {
+        width: 100%;
+        flex-direction: row; } }
 
 /**
     Structure styles
 */
 html {
-  scroll-behavior: smooth;
-}
+  scroll-behavior: smooth; }
 
 nav {
   width: 100%;
@@ -188,102 +168,75 @@ nav {
               li:last-child a {
                   border-right: none;
               }
-          }*/
-}
-@media only screen and (min-width: 768px) {
-  nav {
-    width: 65%;
-  }
-}
-@media only screen and (min-width: 880px) and (max-width: 1149px) {
-  nav {
-    width: 70%;
-    padding-right: 5%;
-    margin-top: 2%;
-  }
-}
-@media only screen and (min-width: 1150px) {
-  nav {
-    height: 70px;
-    width: 65%;
-    padding-right: 10%;
-    margin-top: 1%;
-  }
-}
-nav label {
-  width: 100%;
-  text-align: center;
-  font-size: 1.1rem;
-  vertical-align: bottom;
-}
-@media only screen and (min-width: 768px) {
+          }*/ }
+  @media only screen and (min-width: 768px) {
+    nav {
+      width: 65%; } }
+  @media only screen and (min-width: 880px) and (max-width: 1149px) {
+    nav {
+      width: 70%;
+      padding-right: 5%;
+      margin-top: 2%; } }
+  @media only screen and (min-width: 1150px) {
+    nav {
+      height: 70px;
+      width: 65%;
+      padding-right: 10%;
+      margin-top: 1%; } }
   nav label {
-    display: none;
-  }
-}
-nav input[type=checkbox] {
-  display: none;
-}
-nav input[type=checkbox] + ul {
-  height: 0;
-  overflow: hidden;
-}
-@media only screen and (min-width: 768px) {
-  nav input[type=checkbox] + ul {
-    height: auto;
-  }
-}
-nav input[type=checkbox]:checked + ul {
-  height: auto;
-}
-nav ul {
-  margin: 0;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-}
-nav ul li {
-  width: 200px;
-  list-style: none;
-}
-nav ul li a {
-  text-decoration: none;
-  color: #ea7c97;
-  font-size: 1.2rem;
-  padding: 0 7px;
-  text-align: left;
-}
-@media only screen and (min-width: 768px) {
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    vertical-align: bottom; }
+    @media only screen and (min-width: 768px) {
+      nav label {
+        display: none; } }
+  nav input[type="checkbox"] {
+    display: none; }
+  nav input[type="checkbox"] + ul {
+    height: 0;
+    overflow: hidden; }
+    @media only screen and (min-width: 768px) {
+      nav input[type="checkbox"] + ul {
+        height: auto; } }
+  nav input[type="checkbox"]:checked + ul {
+    height: auto; }
   nav ul {
-    flex-direction: row;
-    padding: 0;
-    flex-wrap: wrap;
-  }
-  nav ul li {
+    margin: 0;
     list-style: none;
-    width: auto;
-  }
-  nav ul li a {
-    border-right: 1px solid #ea7c97;
-  }
-  nav ul li:last-child a {
-    border-right: none;
-  }
-}
-@media only screen and (min-width: 1150px) {
-  nav ul {
-    justify-content: right;
-  }
-}
+    display: flex;
+    flex-direction: column; }
+    nav ul li {
+      width: 200px;
+      list-style: none; }
+      nav ul li a {
+        text-decoration: none;
+        color: #ea7c97;
+        font-size: 1.2rem;
+        padding: 0 7px;
+        text-align: left; }
+    @media only screen and (min-width: 768px) {
+      nav ul {
+        flex-direction: row;
+        padding: 0;
+        flex-wrap: wrap; }
+        nav ul li {
+          list-style: none;
+          width: auto; }
+          nav ul li a {
+            border-right: 1px solid #ea7c97; }
+        nav ul li:last-child a {
+          border-right: none; } }
+    @media only screen and (min-width: 1150px) {
+      nav ul {
+        justify-content: right; } }
 
 .toTop {
-  text-align: right;
-}
-.toTop a {
-  color: #a9caad;
-  text-decoration: none;
-  font-size: 1.3vw;
-}
+  text-align: right; }
+  .toTop a {
+    color: #a9caad;
+    text-decoration: none;
+    font-size: 1.3rem; }
 
 /**
     Header styles
@@ -292,114 +245,96 @@ header {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: center;
-}
-@media only screen and (min-width: 768px) {
-  header {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
+  justify-content: center; }
+  @media only screen and (min-width: 768px) {
+    header {
+      flex-direction: row;
+      justify-content: space-between; } }
 
 /**
 	Article styles
 */
 article {
   width: 100%;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
+
 .opening article {
   background-color: #403c3b;
   height: 100%;
   margin: 0 auto;
   color: white;
   font-size: 1.5rem;
-  line-height: 2rem;
+  line-height: 2.0rem;
   display: flex;
-  align-items: center;
-}
-@media only screen and (min-width: 768px) and (max-width: 879px) {
-  .opening article {
-    background: #403c3b url(../img/sarahford.png) no-repeat bottom left;
-    background-size: contain;
-    font-size: 1.5rem;
-    line-height: 1.9rem;
-  }
-  .opening article p {
-    margin-left: 39%;
-  }
-}
-@media only screen and (min-width: 880px) and (max-width: 1149px) {
-  .opening article {
-    background: #403c3b url(../img/sarahford.png) no-repeat bottom left;
-    background-size: contain;
-    font-size: 1.5rem;
-    line-height: 1.9rem;
-  }
-  .opening article p {
-    margin-left: 35%;
-  }
-}
-@media only screen and (min-width: 1150px) {
-  .opening article {
-    background: #403c3b url(../img/sarahford.png) no-repeat bottom left;
-    background-size: contain;
-    font-size: 1.5rem;
-    line-height: 1.9rem;
-  }
-  .opening article p {
-    margin-left: 35%;
-  }
-}
+  align-items: center; }
+  @media only screen and (min-width: 768px) and (max-width: 879px) {
+    .opening article {
+      background: #403c3b url(../img/sarahford.png) no-repeat bottom left;
+      background-size: contain;
+      font-size: 1.5rem;
+      line-height: 1.9rem; }
+      .opening article p {
+        margin-left: 39%; } }
+  @media only screen and (min-width: 880px) and (max-width: 1149px) {
+    .opening article {
+      background: #403c3b url(../img/sarahford.png) no-repeat bottom left;
+      background-size: contain;
+      font-size: 1.5rem;
+      line-height: 1.9rem; }
+      .opening article p {
+        margin-left: 35%; } }
+  @media only screen and (min-width: 1150px) {
+    .opening article {
+      background: #403c3b url(../img/sarahford.png) no-repeat bottom left;
+      background-size: contain;
+      font-size: 1.5rem;
+      line-height: 1.9rem; }
+      .opening article p {
+        margin-left: 35%; } }
 
 .testimonial article {
   color: white;
   font-size: 1.3rem;
-  text-align: center;
-}
+  text-align: center; }
 
 .voiceover article iframe {
-  max-width: 100%;
-}
+  max-width: 100%; }
 @media only screen and (min-width: 880px) {
   .voiceover article {
-    width: 40%;
-  }
-}
+    width: 40%; } }
 
 .contact article {
-  width: 50%;
-  margin: 0 auto;
-}
+  width: 100%;
+  margin: 0 auto; }
+  @media only screen and (min-width: 768px) {
+    .contact article {
+      width: 60%; } }
 
 /**
     Footer styles
 */
 footer {
-  background-color: #a9caad;
-}
+  background-color: #a9caad; }
 
 /**
  *  Forms styles
  */
 .wpcf7 {
   width: 100%;
-  margin: 0 auto;
-}
-.wpcf7 input {
-  height: 1.5vw;
-  font-size: 1.3vw;
-}
-.wpcf7 input.wpcf7-submit {
-  height: 2vw;
-  font-size: 1.3vw;
-  color: #403c3b;
-  background-color: #ea7c97;
-  border: 0;
-}
-.wpcf7 textarea {
-  width: 63%;
-}
+  margin: 0 auto; }
+  .wpcf7 input {
+    height: 1.5rem;
+    font-size: 1.3rem;
+    width: 100%; }
+    .wpcf7 input.wpcf7-submit {
+      height: 2.0rem;
+      font-size: 1.3rem;
+      color: #403c3b;
+      background-color: #ea7c97;
+      border: 0;
+      width: auto; }
+  .wpcf7 textarea {
+    width: 63%; }
 
 /* 
 #contactform2 {
@@ -470,3 +405,5 @@ footer {
 @import "partials/components.forms";
 
 */
+
+/*# sourceMappingURL=style.css.map */
